@@ -1,0 +1,150 @@
+/* Forge — mobile-first, dark, zero dependencies */
+:root {
+  --bg: #0a0a0b;
+  --card: #141416;
+  --line: #26262a;
+  --text: #e8e8e8;
+  --dim: #9a9aa0;
+  --gold: #d4a017;
+  --gold-dim: #8a6a10;
+  --red: #e5484d;
+  --green: #46a758;
+  --radius: 12px;
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
+  line-height: 1.55;
+  -webkit-text-size-adjust: 100%;
+}
+.wrap { max-width: 640px; margin: 0 auto; padding: 0 16px; }
+a { color: var(--gold); }
+
+.site-header { padding: 28px 0 8px; border-bottom: 1px solid var(--line); }
+.wordmark { margin: 0; font-size: 2rem; letter-spacing: 0.35em; color: var(--gold); }
+.tagline { margin: 4px 0 0; color: var(--dim); }
+
+main.wrap { padding-top: 16px; padding-bottom: 40px; }
+.intro p { margin: 12px 0; }
+
+h2 { font-size: 1.4rem; margin: 18px 0 12px; }
+h3 { font-size: 1.1rem; margin: 22px 0 8px; color: var(--gold); }
+.lede { color: var(--dim); margin: 0 0 16px; }
+.note { color: var(--dim); font-size: 0.92rem; }
+.err {
+  color: var(--red); background: rgba(229, 72, 77, 0.08);
+  border: 1px solid rgba(229, 72, 77, 0.4);
+  padding: 10px 12px; border-radius: var(--radius); margin: 12px 0;
+}
+.warn {
+  background: rgba(212, 160, 23, 0.08);
+  border: 1px solid var(--gold-dim);
+  padding: 12px 14px; border-radius: var(--radius); margin: 16px 0;
+}
+.warn p { margin: 8px 0 0; }
+.filing-note {
+  background: var(--card); border: 1px solid var(--line);
+  padding: 12px 14px; border-radius: var(--radius); margin: 16px 0;
+}
+
+/* progress */
+.progress { display: flex; justify-content: space-between; align-items: center; color: var(--dim); font-size: 0.85rem; margin-bottom: 4px; }
+.dots { display: flex; gap: 6px; }
+.dot { width: 8px; height: 8px; border-radius: 50%; background: var(--line); }
+.dot.done { background: var(--gold-dim); }
+.dot.on { background: var(--gold); }
+
+/* state cards */
+.state-grid { display: grid; gap: 12px; }
+.state-card {
+  display: grid; gap: 2px; text-align: left;
+  background: var(--card); border: 1px solid var(--line); color: var(--text);
+  border-radius: var(--radius); padding: 16px; cursor: pointer; width: 100%;
+  font-size: 1rem; min-height: 64px;
+}
+.state-card.live { border-color: var(--gold-dim); }
+.state-card.live:active { border-color: var(--gold); }
+.state-card.soon { opacity: 0.55; cursor: not-allowed; }
+.state-name { font-weight: 700; font-size: 1.1rem; }
+.state-badge { font-size: 0.75rem; letter-spacing: 0.12em; color: var(--gold); }
+.state-card.soon .state-badge { color: var(--dim); }
+.state-sub { font-size: 0.85rem; color: var(--dim); }
+
+/* form controls */
+.field { display: block; margin: 14px 0; }
+.field span { display: block; font-weight: 600; margin-bottom: 6px; }
+.field input[type="text"], .field input[type="email"] {
+  width: 100%; padding: 14px 12px; font-size: 1rem;
+  background: var(--card); border: 1px solid var(--line); color: var(--text);
+  border-radius: var(--radius);
+}
+.field input:focus { outline: none; border-color: var(--gold); }
+.row2 { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+
+.radio-group { display: grid; gap: 10px; margin: 12px 0; }
+.radio {
+  display: flex; gap: 12px; align-items: flex-start;
+  background: var(--card); border: 1px solid var(--line);
+  border-radius: var(--radius); padding: 14px; cursor: pointer;
+  min-height: 56px;
+}
+.radio input { width: 22px; height: 22px; margin: 2px 0 0; accent-color: var(--gold); flex-shrink: 0; }
+.radio:has(input:checked) { border-color: var(--gold); }
+
+.check {
+  display: flex; gap: 12px; align-items: flex-start;
+  background: var(--card); border: 1px solid var(--line);
+  border-radius: var(--radius); padding: 14px; margin: 12px 0; cursor: pointer;
+  min-height: 56px;
+}
+.check input { width: 22px; height: 22px; margin: 2px 0 0; accent-color: var(--gold); flex-shrink: 0; }
+.check.step small { color: var(--dim); }
+
+/* nav buttons */
+.nav { display: flex; justify-content: space-between; gap: 12px; margin-top: 24px; }
+.btn {
+  flex: 1; padding: 16px; font-size: 1.05rem; font-weight: 700;
+  border-radius: var(--radius); border: 1px solid var(--line);
+  cursor: pointer; min-height: 56px;
+}
+.btn.gold { background: var(--gold); border-color: var(--gold); color: #111; }
+.btn.gold:active { filter: brightness(1.1); }
+.btn.ghost { background: transparent; color: var(--text); flex: 0 0 110px; }
+.btn-row { display: flex; gap: 12px; margin-top: 20px; }
+.btn-row .btn { flex: 1; }
+
+/* fee box + worksheet */
+.feebox { background: var(--card); border: 1px solid var(--line); border-radius: var(--radius); padding: 6px 14px; margin: 16px 0; }
+.fee-row { display: flex; justify-content: space-between; gap: 12px; padding: 10px 0; border-bottom: 1px solid var(--line); }
+.fee-row:last-child { border-bottom: none; }
+.fee-row.dim { color: var(--dim); }
+.ws-table { background: var(--card); border: 1px solid var(--line); border-radius: var(--radius); overflow: hidden; }
+.ws-row { display: grid; grid-template-columns: 130px 1fr; gap: 10px; padding: 10px 14px; border-bottom: 1px solid var(--line); font-size: 0.95rem; }
+.ws-row:last-child { border-bottom: none; }
+.ws-row span { color: var(--dim); }
+.ws-row strong { font-weight: 600; overflow-wrap: anywhere; }
+.howto { padding-left: 22px; }
+.howto li { margin: 8px 0; }
+.checklist { display: grid; gap: 10px; }
+
+.site-footer { border-top: 1px solid var(--line); padding: 20px 0 32px; }
+.disclaimer { font-size: 0.85rem; color: var(--dim); }
+.fine { font-size: 0.8rem; color: var(--dim); opacity: 0.7; }
+
+@media (min-width: 560px) {
+  .wordmark { font-size: 2.4rem; }
+}
+
+/* print: worksheet only */
+@media print {
+  body { background: #fff; color: #111; }
+  .no-print, .site-header, .site-footer, .intro { display: none !important; }
+  .wrap { max-width: none; }
+  .ws-table, .feebox, .warn, .filing-note { border-color: #999; background: #fff; }
+  .ws-row span, .lede, .note { color: #444; }
+  h3, a { color: #111; }
+  .check input { accent-color: #111; }
+}
