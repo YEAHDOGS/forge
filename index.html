@@ -3,35 +3,254 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Forge — Start Your Business (Oklahoma LLC Wizard)</title>
-<meta name="description" content="Forge walks you through forming an Oklahoma LLC: a printable Articles of Organization worksheet, exact filing instructions, and a post-filing checklist. Forge files nothing — you file at sos.ok.gov yourself.">
+<title>Forge — Free Oklahoma LLC Formation Wizard</title>
+<meta name="description" content="Free Oklahoma LLC wizard: a printable Articles of Organization worksheet, exact filing instructions, and a post-filing checklist. Files nothing, not legal advice.">
+<link rel="canonical" href="https://yeahdogs.github.io/forge/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Forge">
+<meta property="og:title" content="Forge — Free Oklahoma LLC Formation Wizard">
+<meta property="og:description" content="Answer a few questions. Get a printable Articles of Organization worksheet, exact filing instructions, and a post-filing checklist. Free. Files nothing.">
+<meta property="og:url" content="https://yeahdogs.github.io/forge/">
+<meta property="og:image" content="https://yeahdogs.github.io/forge/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Forge — Free Oklahoma LLC Formation Wizard">
+<meta name="twitter:description" content="Answer a few questions. Get a printable Articles of Organization worksheet, exact filing instructions, and a post-filing checklist. Free. Files nothing.">
+<meta name="twitter:image" content="https://yeahdogs.github.io/forge/og.png">
+<link rel="icon" href="favicon.ico" sizes="any">
+<link rel="icon" type="image/svg+xml" href="favicon.svg">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
 <link rel="stylesheet" href="styles.css">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebSite",
+      "name": "Forge",
+      "url": "https://yeahdogs.github.io/forge/",
+      "description": "Free Oklahoma LLC formation wizard: printable Articles of Organization worksheet, exact filing instructions, post-filing checklist."
+    },
+    {
+      "@type": "Organization",
+      "name": "DOGS",
+      "url": "https://wearedogs.net"
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Is Forge really free?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Yes. The wizard is free and open source. There is no account, no paywall, and no upsell. You pay only the state fees when you file, directly to the state." }
+        },
+        {
+          "@type": "Question",
+          "name": "Does Forge file my LLC for me?",
+          "acceptedAnswer": { "@type": "Answer", "text": "No. Forge prepares everything: a filled worksheet, exact filing instructions, and a live fee total. You take the worksheet and file at sos.ok.gov yourself. Online filing takes about one business day." }
+        },
+        {
+          "@type": "Question",
+          "name": "Is this legal advice?",
+          "acceptedAnswer": { "@type": "Answer", "text": "No. Forge is not a law firm and nothing it produces is legal advice. If your situation is complicated, talk to a business attorney." }
+        },
+        {
+          "@type": "Question",
+          "name": "Why Oklahoma only?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Every fee and rule in Forge is verified against the Oklahoma Secretary of State. More states are added only after their fee data is verified, never before. Unverified states are marked coming soon with no numbers at all." }
+        },
+        {
+          "@type": "Question",
+          "name": "What if I operate in Texas?",
+          "acceptedAnswer": { "@type": "Answer", "text": "An Oklahoma LLC transacting business in Texas must register as a foreign LLC: $750 plus a 2.7% card fee, with late fees after 90 days. Forge flags this in the wizard and advises talking to a Texas business attorney before choosing Oklahoma." }
+        },
+        {
+          "@type": "Question",
+          "name": "Where does my information go?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Nowhere. The wizard runs entirely in your browser. Your answers are saved on your device only, and nothing is sent to any server." }
+        }
+      ]
+    }
+  ]
+}
+</script>
 </head>
 <body>
-<header class="site-header no-print">
+
+<header class="site-header">
   <div class="wrap">
-    <h1 class="wordmark">FORGE</h1>
-    <p class="tagline">Start your business. Oklahoma LLC, step by step.</p>
+    <a class="wordmark" href="./" aria-label="Forge home"><i class="mark">F</i>FORGE</a>
+    <a class="nav-cta" href="https://github.com/YEAHDOGS/forge">Open the wizard</a>
   </div>
 </header>
 
-<main class="wrap">
-  <section class="intro no-print">
-    <p><strong>Forge turns forming an LLC into a plain-English wizard.</strong> Answer a few questions and you get a filled, printable Articles of Organization worksheet, exact filing instructions with a live fee total, and a post-filing checklist (EIN → bank → card → domain).</p>
-    <p class="filing-note"><strong>Forge files nothing.</strong> It submits nothing to any state. You take the worksheet and file at <a href="https://www.sos.ok.gov/" target="_blank" rel="noopener">sos.ok.gov</a> yourself.</p>
+<main>
+  <section class="hero">
+    <div class="wrap">
+      <p class="eyebrow rise">Free tool · Oklahoma first</p>
+      <h1 class="rise d1">Form your LLC <span class="accent">without</span> the guesswork.</h1>
+      <p class="lede rise d2">Forge is a plain-English wizard for Oklahoma LLC formation. Answer a few questions and get a printable worksheet, exact filing instructions, and a post-filing checklist.</p>
+      <div class="hero-ctas rise d3">
+        <a class="btn btn-primary" href="https://github.com/YEAHDOGS/forge">Start the free wizard</a>
+        <a class="btn btn-ghost" href="#fees">See the fee facts</a>
+      </div>
+      <p class="hero-note rise d4"><strong>Forge files nothing.</strong> You file at sos.ok.gov yourself.</p>
+
+      <div class="fee-strip rise d4" aria-label="Verified Oklahoma fee facts">
+        <div class="fee"><p class="num">$100</p><p class="lbl">Articles of Organization · SOS Form 0074</p></div>
+        <div class="fee"><p class="num">$25<small style="font-size:.5em;color:#9b9078">/yr</small></p><p class="lbl">Annual Certificate, on your anniversary</p></div>
+        <div class="fee"><p class="num">$0</p><p class="lbl">EIN from the IRS · free, online, immediate</p></div>
+        <div class="fee"><p class="num">Free</p><p class="lbl">The wizard itself · no account, no paywall</p></div>
+      </div>
+    </div>
   </section>
 
-  <div id="app" aria-live="polite"></div>
+  <section class="block" id="what-you-get">
+    <div class="wrap">
+      <p class="kicker reveal">What you get</p>
+      <h2 class="sec-title reveal" style="--d:60ms">Everything you need to file, in one pass.</h2>
+      <p class="sec-sub reveal" style="--d:120ms">Eight short steps. No legalese. You walk away ready to file.</p>
+      <ol class="get-list">
+        <li class="reveal">
+          <span class="n">01</span>
+          <div><h3>A printable Articles worksheet</h3><p>Your answers filled into a clean worksheet for the Oklahoma Articles of Organization (SOS Form 0074). Print it, then copy it into the state filing.</p></div>
+        </li>
+        <li class="reveal" style="--d:80ms">
+          <span class="n">02</span>
+          <div><h3>Exact filing instructions, with a live fee total</h3><p>Where to file, how long it takes (online: about one business day; mail: 7 to 10), and what you will pay, totaled as you answer. Optional name reservation ($10, 60 days) and same-day in-person service (+$25) included.</p></div>
+        </li>
+        <li class="reveal" style="--d:160ms">
+          <span class="n">03</span>
+          <div><h3>A post-filing checklist that sticks around</h3><p>EIN, operating agreement, bank account, business card, domain. Saved on your device, checked off as you go, so the paperwork after the paperwork does not slip.</p></div>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <section class="block alt" id="how-it-works">
+    <div class="wrap">
+      <p class="kicker reveal">How it works</p>
+      <h2 class="sec-title reveal" style="--d:60ms">Eight steps, about ten minutes.</h2>
+      <ol class="steps">
+        <li class="reveal"><span class="snum">01</span><div><strong>Pick your state.</strong> <span>Oklahoma is live. Others are coming soon, only after verification.</span></div></li>
+        <li class="reveal" style="--d:60ms"><span class="snum">02</span><div><strong>Texas check.</strong> <span>Operating in Texas? Forge warns you about the $750 foreign registration before you go further.</span></div></li>
+        <li class="reveal" style="--d:120ms"><span class="snum">03</span><div><strong>Name your LLC.</strong> <span>Validated against Oklahoma naming rules as you type.</span></div></li>
+        <li class="reveal" style="--d:180ms"><span class="snum">04</span><div><strong>Choose a registered agent.</strong> <span>Yourself or a commercial service (typical band: $50 to $125 per year).</span></div></li>
+        <li class="reveal" style="--d:240ms"><span class="snum">05</span><div><strong>Principal address.</strong> <span>Street address, wherever located. No PO boxes.</span></div></li>
+        <li class="reveal" style="--d:300ms"><span class="snum">06</span><div><strong>Contact email.</strong> <span>Oklahoma sends Annual Certificate notices to email only, so this one matters.</span></div></li>
+        <li class="reveal" style="--d:360ms"><span class="snum">07</span><div><strong>Structure.</strong> <span>Member or manager managed, perpetual term, the standard choices.</span></div></li>
+        <li class="reveal" style="--d:420ms"><span class="snum">08</span><div><strong>Print the worksheet.</strong> <span>Filled, with instructions and your fee total. Then file at sos.ok.gov.</span></div></li>
+      </ol>
+    </div>
+  </section>
+
+  <section class="block" id="fees">
+    <div class="wrap">
+      <p class="kicker reveal">Fee facts</p>
+      <h2 class="sec-title reveal" style="--d:60ms">Real numbers, verified at the source.</h2>
+      <p class="sec-sub reveal" style="--d:120ms">Every figure below was checked against sos.ok.gov. Verify again before you pay; fees change.</p>
+      <table class="fee-table reveal" style="--d:160ms">
+        <thead><tr><th scope="col">Item</th><th scope="col">Cost</th><th scope="col">Notes</th></tr></thead>
+        <tbody>
+          <tr><td>Articles of Organization (SOS Form 0074)</td><td class="amt">$100</td><td class="note">One time. File online at sos.ok.gov.</td></tr>
+          <tr><td>Annual Certificate</td><td class="amt">$25<small>per year</small></td><td class="note">Due every year on your formation anniversary. File up to 60 days early. Notices go to email on file only.</td></tr>
+          <tr><td>Name reservation</td><td class="amt">$10<small>optional</small></td><td class="note">Holds a name for 60 days. Skip it if you file right away.</td></tr>
+          <tr><td>In-person same-day service</td><td class="amt">+$25</td><td class="note">Expedite option at the Secretary of State office.</td></tr>
+          <tr><td>Commercial registered agent</td><td class="amt">$50–125<small>per year</small></td><td class="note">Typical first-year band. Or serve as your own agent with an Oklahoma street address.</td></tr>
+          <tr><td>EIN</td><td class="amt">$0</td><td class="note">Free from the IRS at irs.gov, online and immediate.</td></tr>
+        </tbody>
+      </table>
+      <p class="verified-note reveal">Verified 2026-09-09 at sos.ok.gov. Publication requirement: none. Franchise tax: none for most LLCs. Member names are not required on the articles.</p>
+      <div class="tx-warning reveal">
+        <span class="tag">Texas warning</span>
+        <p><strong>An Oklahoma LLC transacting business in Texas must register as a foreign LLC: $750</strong> plus a 2.7% card fee, with late fees after 90 days. Talk to a Texas business attorney before choosing Oklahoma if you will operate in Texas.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="block alt">
+    <div class="wrap">
+      <div class="not-panel reveal">
+        <p class="kicker">Straight talk</p>
+        <h2 class="sec-title">What Forge is not.</h2>
+        <ul class="not-list">
+          <li><span class="x">01 / FILING</span><strong>Forge files nothing.</strong><span>It submits nothing to any state, ever. You file the worksheet at sos.ok.gov yourself.</span></li>
+          <li><span class="x">02 / LEGAL</span><strong>Not legal advice. Not a law firm.</strong><span>The wizard organizes public filing requirements. For complicated situations, talk to an attorney.</span></li>
+          <li><span class="x">03 / DATA</span><strong>No fake numbers.</strong><span>Unverified states are marked coming soon with no fee fields at all. A test suite enforces this: a coming-soon state carrying any fee data fails the build.</span></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="block" id="faq">
+    <div class="wrap">
+      <p class="kicker reveal">FAQ</p>
+      <h2 class="sec-title reveal" style="--d:60ms">Asked, answered.</h2>
+      <div class="faq reveal" style="--d:120ms">
+        <details>
+          <summary>Is Forge really free?</summary>
+          <div class="a"><p>Yes. The wizard is free and open source. No account, no paywall, no upsell. You pay only the state fees when you file, directly to the state.</p></div>
+        </details>
+        <details>
+          <summary>Does Forge file my LLC for me?</summary>
+          <div class="a"><p>No. Forge prepares everything: a filled worksheet, exact filing instructions, and a live fee total. You take the worksheet and file at sos.ok.gov yourself. Online filing takes about one business day.</p></div>
+        </details>
+        <details>
+          <summary>Is this legal advice?</summary>
+          <div class="a"><p>No. Forge is not a law firm and nothing it produces is legal advice. If your situation is complicated, talk to a business attorney.</p></div>
+        </details>
+        <details>
+          <summary>Why Oklahoma only?</summary>
+          <div class="a"><p>Every fee and rule in Forge is verified against the Oklahoma Secretary of State. More states are added only after their fee data is verified, never before. Unverified states are marked coming soon with no numbers at all.</p></div>
+        </details>
+        <details>
+          <summary>What if I operate in Texas?</summary>
+          <div class="a"><p>An Oklahoma LLC transacting business in Texas must register as a foreign LLC: $750 plus a 2.7% card fee, with late fees after 90 days. Forge flags this in the wizard and advises talking to a Texas business attorney before choosing Oklahoma.</p></div>
+        </details>
+        <details>
+          <summary>Where does my information go?</summary>
+          <div class="a"><p>Nowhere. The wizard runs entirely in your browser. Your answers are saved on your device only, and nothing is sent to any server.</p></div>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <section class="final-cta">
+    <div class="wrap">
+      <h2 class="reveal">Your business starts with one form.</h2>
+      <p class="reveal" style="--d:80ms">Free wizard. Real numbers. Ten minutes.</p>
+      <div class="hero-ctas reveal" style="--d:160ms">
+        <a class="btn btn-primary" href="https://github.com/YEAHDOGS/forge">Start the free wizard</a>
+      </div>
+      <p class="hero-note reveal" style="--d:220ms"><strong>Forge files nothing.</strong> Not legal advice.</p>
+    </div>
+  </section>
 </main>
 
 <footer class="site-footer">
   <div class="wrap">
-    <p class="disclaimer"><strong>Not legal advice.</strong> Forge is not a law firm. Oklahoma fee data verified 2026-09-09 at sos.ok.gov — verify fees before you pay. Other states are marked "coming soon" until their data is verified; nothing is ever faked.</p>
-    <p class="fine">Progress saves on this device only. Nothing leaves your browser.</p>
+    <div class="cols">
+      <div>
+        <p class="disclaimer"><strong>Not legal advice.</strong> Forge is not a law firm. Oklahoma fee data verified 2026-09-09 at sos.ok.gov. Verify fees before you pay. Other states are marked coming soon until their data is verified; nothing is ever faked.</p>
+        <p class="attrib">This product was made by <a href="https://wearedogs.net">DOGS</a></p>
+        <p class="no-cookies">No cookies. No tracking. Nothing leaves your browser.</p>
+      </div>
+      <nav aria-label="Footer">
+        <ul>
+          <li><a href="privacy.html">Privacy</a></li>
+          <li><a href="terms.html">Terms</a></li>
+          <li><a href="https://github.com/YEAHDOGS/forge">GitHub</a></li>
+        </ul>
+      </nav>
+    </div>
   </div>
 </footer>
 
-<script src="logic.js"></script>
-<script src="app.js"></script>
+<div class="sticky-cta" id="stickyCta" aria-hidden="true">
+  <a href="https://github.com/YEAHDOGS/forge" tabindex="-1">Start the free wizard</a>
+</div>
+
+<script src="script.js"></script>
 </body>
 </html>
